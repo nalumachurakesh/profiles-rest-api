@@ -83,21 +83,21 @@ class HelloViewSet(viewsets.ViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        def retrieve(self, request, pk=None):
-            """Handle getting an object by iD"""
-            return Reponse({'http_method':'GET'})
+    def retrieve(self, request, pk=None):
+        """Handle getting an object by iD"""
+        return Reponse({'http_method':'GET'})
 
-        def update(self, request, pk=None):
-            """Handle updating an object"""
-            return Reponse({'http_method':'PUT'})
+    def update(self, request, pk=None):
+        """Handle updating an object"""
+        return Reponse({'http_method':'PUT'})
 
-        def partial_update(self, request, pk=None):
-            """Handle updating part of an object"""
-            return Reponse({'http_method':'PATCH'})
+    def partial_update(self, request, pk=None):
+        """Handle updating part of an object"""
+        return Reponse({'http_method':'PATCH'})
 
-        def destroy(self, request, pk=None):
-            """Handle removing an object"""
-            return Reponse({'http_method':'DELETE'})
+    def destroy(self, request, pk=None):
+        """Handle removing an object"""
+        return Reponse({'http_method':'DELETE'})
 
 
 class UserProfileViewSet(viewsets.ModelViewSet):
